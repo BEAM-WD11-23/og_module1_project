@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
     screens: {
+
+      mob: {'min': '300px', 'max': '499px'},
+
       sm: {'min': '500px', 'max': '767px'},
 
       md: {'min': '768px', 'max': '1023px'},
@@ -20,7 +23,8 @@ export default {
         headerBlack: 'rgb(15 15 18)',
         cardsBlack: 'rgb(20 19 26)',
         cjViolet: 'rgb(102 0 172)',
-        cjHover: 'rgb(59 59 61)'
+        cjHover: 'rgb(59 59 61)',
+        cjWhite: 'rgb(211 203 232)'
       },
 
       fontFamily: {
