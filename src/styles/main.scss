@@ -1,3 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities"; 
+
+@layer components{
+    .navBtn{ 
+        @apply bg-inherit p-4 text-white text-lg font-nunito hover:bg-cjViolet;
+    }
+}
+
+// For table:
+
+// @layer components{
+//     .myCell{
+//         @apply before:content-['content'];
+//     }
+
+//     .itemName{
+//         @apply ;
+//     }
+
+//     .itemQuantity{
+//         @apply ;
+//     }
+
+//     .itemPrice{
+//         @apply ;
+//     }
+// }
+
