@@ -185,7 +185,7 @@ flex-col">
             text-xl
             text-slate-600 
             rounded-md
-            focus:ring-4 focus:ring-inset focus:ring-cjViolet" type="text" name="name" id="name" placeholder="Enter Your Name..." value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*_)(?=[a-zA-Z]){6,12}$" required>
+            focus:ring-4 focus:ring-inset focus:ring-cjViolet" type="text" name="name" id="name" placeholder="Enter Your Name..." value="" pattern="[A-Za-z]+(?:\s[A-Za-z]+)+$" required>
 
             <label for="email" class="block m-auto pt-5 pl-2 text-left text-xl font-nunito leading-8 text-cjWhite">E-Mail</label>
             <input class="w-full 
@@ -221,7 +221,7 @@ flex-col">
             text-xl
             text-slate-600 
             rounded-md
-            focus:ring-4 focus:ring-inset focus:ring-cjViolet" type="text" name="country" id="country" placeholder="Country" value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*_)(?=[a-zA-Z]){6,12}$" required>
+            focus:ring-4 focus:ring-inset focus:ring-cjViolet" type="text" name="country" id="country" placeholder="Country" value="" pattern="[A-Za-z\s-]+$" required>
         
             <label for="message" class="block m-auto pt-5 pl-2 text-left text-xl font-nunito leading-8 text-cjWhite">Your Message:</label>
             <input class="w-full
