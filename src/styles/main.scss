@@ -5,7 +5,7 @@
 @import "tailwindcss/utilities"; 
 
 @layer components{
-    .navBtn{@apply bg-inherit p-4 text-white text-lg font-nunito hover:text-cjViolet;}
+    .navBtn{@apply bg-inherit p-5 text-white text-xl font-nunito hover:text-cjViolet;}
 }
    
 

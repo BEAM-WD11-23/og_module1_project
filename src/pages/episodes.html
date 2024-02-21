@@ -16,143 +16,139 @@ flex-col">
 
     <!-- Header Start -->
     <header class="bg-headerBlack 
- w-screen 
- flex 
- justify-around 
- lg:justify-between
- xl:justify-between
- xxl:justify-between
- items-center 
- sticky top-0 
- p-2">
-
-   <!-- Logo start -->
-   <a class="bg-inherit inline-block w-48 p-2" href="../../index.html">
-     <img
-     src="/src/assets/images/Logo-Web.png" 
-     alt="Logo image">
-   </a>
-   <!-- Logo End -->
-
-   <!-- Navigation Start -->
-   <nav class="bg-inherit 
-   basis-auto 
-   flex 
-   lg:flex-1
-   xl:flex-1
-   xxl:flex-1
-   justify-end
-   items-center
-   gap-4
-   px-2
-   box-border
-   ">
-
-     <ul class="hidden lg:flex xl:flex xxl:flex lg:gap-3 xl:gap-4 xxl:gap-5">
-       <li><a class="navBtn" href="../../index.html">Home</a></li>
-       <li><a class="navBtn" href="../pages/merch.html">Merch</a></li>
-       <li><a class="navBtn" href="../pages/contact us.html">Contact Us</a></li>
-     </ul>
+  w-screen 
+  flex 
+  justify-around 
+  lg:justify-between
+  xl:justify-between
+  xxl:justify-between
+  items-center 
+  sticky top-0  
+  p-2">
+  
+    <!-- Logo start -->
+    <a aria-label="Logo" class="bg-inherit inline-block w-[300px] p-2" href="../../index.html">
+      <img
+      src="../assets/images/Logo-Web.png" 
+      alt="Logo image">
+    </a>
+    <!-- Logo End -->
+  
+    <!-- Navigation Start -->
+    <nav class="bg-inherit 
+    basis-auto 
+    flex 
+    lg:flex-1
+    xl:flex-1
+    xxl:flex-1
+    justify-end
+    items-center
+    gap-4
+    px-2
+    box-border">
+  
+      <ul class="hidden lg:flex xl:flex xxl:flex lg:gap-3 xl:gap-4 xxl:gap-5">
+        <li><a class="navBtn" href="../../index.html">Home</a></li>
+        <li><a class="navBtn" href="./merch.html">Merch</a></li>
+        <li><a class="navBtn" href="./contact us.html">Contact Us</a></li>
+      </ul>
+  
+      <!-- Buttons Start -->
+      <div class="bg-inherit flex relative mr-2 px-2">
+  
+        <!-- Search Start -->
+        <input type="checkbox" id="searchCheck" class="hidden">
+        <label for="searchCheck" class="navBtn
+        text-2xl
+        cursor-pointer">
+          <i class="rotate-90 fa-solid fa-magnifying-glass"></i>
+        </label>
+  
+        <div class="bg-transparent 
+        invisible
+        opacity-0 
+        fixed 
+        top-20 
+        right-5 
+        p-3 
+        w-[250px] 
+        lg:w-[500px] 
+        xl:w-[650px] 
+        xxl:w-[800px]" id="searchInput">
+          <input type="search" placeholder="Search..." class="bg-inherit
+          w-full
+          relative
+          px-4
+          py-3
+          text-white
+          text-lg
+          border-none
+          rounded-xl">
+          <label for="searchCheck" class="bg-transparent 
+          absolute 
+          top-4 
+          right-5
+          p-2
+          text-2xl
+        text-white">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+        </div>
    
-     <!-- Buttons Start -->
-
-   <div class="bg-inherit flex relative mr-2 px-2">
-
-     <!-- Search Start -->
-     <input type="checkbox" id="searchCheck" class="hidden">
-     <label for="searchCheck" class="bg-inherit
-     p-3
-     text-white 
-     text-2xl
-     cursor-pointer">
-       <i class="rotate-90 fa-solid fa-magnifying-glass"></i>
-     </label>
-
-     <div class="bg-transparent 
-     invisible
-     opacity-0 
-     fixed 
-     top-20 
-     right-5 
-     p-3 
-     w-[250px] 
-     lg:w-[500px] 
-     xl:w-[650px] 
-     xxl:w-[800px]" id="searchInput">
-       <input type="search" placeholder="Search..." class="bg-inherit
-       w-full
-       relative
-       px-4
-       py-3
-       text-white
-       text-lg
-       border-none
-       rounded-xl">
-       <label for="searchCheck" class="bg-transparent 
-       absolute 
-       top-4 
-       right-5
-       p-2
-       text-2xl
-     text-white ">
-         <i class="fa-solid fa-xmark"></i>
-       </label>
-     </div>
-
-     <style>
-       #searchInput {
-       transition: all 400ms ease;
-       transform: translateX(100%);
-       }
-       #searchCheck:checked ~ #searchInput {
-       visibility: visible; 
-       opacity: 1; 
-       transform: translateX(0%);
-       }
-     </style>
-     <!-- Search End -->
-
-     <input type="checkbox" id="dropdownBtn" class="hidden">
-     <label for="dropdownBtn" id="dropdownBtn" class="bg-inherit 
-   text-white 
-     text-2xl 
-     p-3
-     lg:hidden
-     xl:hidden
-     xxl:hidden
-     cursor-pointer">
-        <i class="fa-solid fa-bars"></i>
-     </label>
-
-     <div id="dropdownMenu" class="inline-block 
-     w-32 
-     py-2 
-     hidden
-     absolute 
-     top-20">
-       <ul class="bg-headerBlack 
-       flex flex-col 
-       gap-6 
-       py-3 
-       border-t-4 
-       border-cjViolet 
-       lg:hidden 
-       xl:hidden 
-       xxl:hidden">
-           <li><a class="navBtn" href="../../index.html">Home</a></li>
-           <li><a class="navBtn" href="../pages/merch.html">Merch</a></li>
-           <li><a class="navBtn" href="../pages/contact us.html">Contact Us</a></li>
-       </ul>
-     </div>
-   </div>
-
-   <style>
-       #dropdownBtn:checked ~ #dropdownMenu {display: inline-block;}
-   </style>
-    <!-- Buttons End -->
-
-   </nav>
-    <!-- Navigation End -->
+        <style>
+          #searchInput {
+          transition: all 400ms ease;
+          transform: translateX(100%);
+          }
+          #searchCheck:checked ~ #searchInput {
+          visibility: visible; 
+          opacity: 1; 
+          transform: translateX(0%);
+          }
+        </style>
+        <!-- Search End -->
+  
+        <input type="checkbox" id="dropdownBtn" class="hidden">
+        <label for="dropdownBtn" id="dropdownBtn" class="navBtn
+        text-2xl
+        lg:hidden
+        xl:hidden
+        xxl:hidden
+        cursor-pointer">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+  
+        <div id="dropdownMenu" class="inline-block 
+        w-32 
+        py-2 
+        hidden
+        absolute 
+        top-20">
+            <ul class="bg-headerBlack 
+            flex flex-col 
+            gap-6 
+            py-3 
+            border-t-4 
+           border-cjViolet 
+            lg:hidden 
+            xl:hidden 
+            xxl:hidden">
+                <li><a class="navBtn" href="../../index.html">Home</a></li>
+                <li><a class="navBtn" href="./merch.html">Merch</a></li>
+                <li><a class="navBtn" href="./contact us.html">Contact Us</a></li>
+            </ul>
+        </div>
+  
+      </div>
+      <!-- Buttons End -->
+  
+      <style>
+        #dropdownBtn:checked ~ #dropdownMenu {display: inline-block;}
+      </style>
+      <!-- Buttons End -->
+  
+    </nav>
+   <!-- Navigation End -->
     </header>
     <!-- Header End -->
 
