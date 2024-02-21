@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../styles/main.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body class="bg-[url('/../src/assets/images/bg.png')] 
+bg-cover 
+w-full 
+h-screen
+flex 
+flex-col">
+
+  <!-- Header Start -->
+  <header class="bg-headerBlack 
+  w-screen 
+  flex 
+  justify-around 
+  lg:justify-between
+  xl:justify-between
+  xxl:justify-between
+  items-center 
+  sticky top-0 
+  p-2">
+
+    <!-- Logo start -->
+    <a class="bg-inherit inline-block w-48 p-2" href="../../index.html">
+      <img
+      src="/src/assets/images/Logo-Web.png" 
+      alt="Logo image">
+    </a>
+    <!-- Logo End -->
+
+    <!-- Navigation Start -->
+    <nav class="bg-inherit 
+    basis-auto 
+    flex 
+    lg:flex-1
+    xl:flex-1
+    xxl:flex-1
+    justify-end
+    items-center
+    gap-4
+    px-2
+    box-border
+    ">
+
+      <ul class="hidden lg:flex xl:flex xxl:flex lg:gap-3 xl:gap-4 xxl:gap-5">
+        <li><a class="navBtn" href="../../index.html">Home</a></li>
+        <li><a class="navBtn" href="../pages/episodes.html">Episodes</a></li>
+        <li><a class="navBtn" href="../pages/merch.html">Merch</a></li>
+      </ul>
+    
+      <!-- Buttons Start -->
+
+    <div class="bg-inherit flex relative mr-2 px-2">
+
+      <!-- Search Start -->
+      <input type="checkbox" id="searchCheck" class="hidden">
+      <label for="searchCheck" class="bg-inherit
+      p-3
+      text-white 
+      text-2xl
+      cursor-pointer">
+        <i class="rotate-90 fa-solid fa-magnifying-glass"></i>
+      </label>
+
+      <div class="bg-transparent 
+      hidden 
+      fixed 
+      top-20 
+      right-5 
+      p-3 
+      w-[250px] 
+      lg:w-[500px] 
+      xl:w-[650px] 
+      xxl:w-[800px]" id="searchInput">
+         <input type="search" placeholder="Search..." class="bg-inherit
+          w-full
+          relative
+          px-4
+          py-3
+          text-white
+          text-lg
+          border-none
+          rounded-xl
+          leading-8">
+        <label for="searchCheck" class="bg-transparent 
+        absolute 
+        top-4 
+        right-5
+        p-2
+        text-2xl
+      text-white ">
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+      </div>
+     
+      <style>
+        #searchCheck:checked ~ #searchInput {display: block;}
+      </style>
+      <!-- Search End -->
+
+      <input type="checkbox" id="dropdownBtn" class="hidden">
+      <label for="dropdownBtn" id="dropdownBtn" class="bg-inherit 
+    text-white 
+      text-2xl 
+      p-3
+      lg:hidden
+      xl:hidden
+      xxl:hidden
+      cursor-pointer">
+         <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <div id="dropdownMenu" class="inline-block 
+      w-32 
+      py-2 
+      hidden
+      absolute 
+      top-20">
+        <ul class="bg-headerBlack 
+        flex flex-col 
+        gap-6 
+        py-3 
+        border-t-4 
+        border-cjViolet 
+        lg:hidden 
+        xl:hidden 
+        xxl:hidden">
+            <li><a class="navBtn" href="../../index.html">Home</a></li>
+            <li><a class="navBtn" href="../pages/episodes.html">Episodes</a></li>
+            <li><a class="navBtn" href="../pages/merch.html">Merch</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <style>
+        #dropdownBtn:checked ~ #dropdownMenu {display: inline-block;}
+    </style>
+     <!-- Buttons End -->
+
+    </nav>
+     <!-- Navigation End -->
+  </header>
+  <!-- Header End -->
+
+  <!-- Main Start -->
+  <main class="bg-transparent flex-grow overflow-y-auto">
+
+    <section class="bg-yellow-200
+    w-full text-center">
+        <h1 class="py-20 
+        text-center        
+        text-4xl md:text-5xl lg:text-5xl xl:text-6xl xxl:text-6xl 
+      text-white 
+        font-bold 
+        font-sans">Get In Touch</h1>
+
+        <!-- Form Start -->
+        <form class="bg-cardsBlack 
+        inline-block
+        py-10
+        px-12
+        m-auto 
+        box-content
+        rounded-xl
+        border-4
+        border-cjViolet">
+
+            <label for="name" class="block m-auto pl-2 text-left text-xl font-nunito leading-8 text-cjWhite">Full Name</label>
+            <input class="w-full 
+            px-3 
+            leading-8 
+            text-xl
+            text-slate-600 
+            rounded-md
+            focus:ring-4 focus:ring-inset focus:ring-cjViolet" type="text" name="name" id="name" placeholder="Enter Your Name..." value="" required>
+
+            <label for="email" class="block m-auto pt-5 pl-2 text-left text-xl font-nunito leading-8 text-cjWhite">E-Mail</label>
+            <input class="w-full 
+            px-3 
+            leading-8 
+            text-xl
+            text-slate-600 
+            rounded-md
+            focus:ring-4 focus:ring-inset focus:ring-cjViolet" type="email" name="email" id="email" placeholder="Enter Your E-Mail..." value="" required>
+
+            <label for="dob" class="block m-auto pt-5 pl-2 text-left text-xl font-nunito leading-8 text-cjWhite">Birthday</label>
+            <input class="w-full 
+            px-3 
+            leading-8 
+            text-xl
+            text-slate-600 
+            rounded-md
+            focus:ring-4 focus:ring-inset focus:ring-cjViolet" type="date" name="date" id="dob" value="" required>
+
+            <label for="country" class="block m-auto pt-5 pl-2 text-left text-xl font-nunito leading-8 text-cjWhite">Country</label>
+            <input class="w-full 
+            px-3 
+            leading-8 
+            text-xl
+            text-slate-600 
+            rounded-md
+            focus:ring-4 focus:ring-inset focus:ring-cjViolet" type="text" name="country" id="country" placeholder="Country" value="" required>
+        
+            <label for="message" class="block m-auto pt-5 pl-2 text-left text-xl font-nunito leading-8 text-cjWhite">Your Message:</label>
+            <input class="w-full 
+            h-24
+            px-3 
+            leading-25 
+            text-xl
+            text-slate-600 
+            rounded-md
+            focus:ring-4 focus:ring-inset focus:ring-cjViolet
+            placeholder:align-text-top" type="text" name="message" id="message" value="" placeholder="Type your message..." required>
+        </form>
+        <!-- Form End -->
+    </section>
+  </main>
+  <!-- Main End -->
+    
+</body>
+</html>
