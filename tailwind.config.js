@@ -23,6 +23,7 @@ export default {
         headerBlack: 'rgb(15 15 18)',
         cardsBlack: 'rgb(20 19 26)',
         cjViolet: 'rgb(102 0 172)',
+        cjBrightViolet: 'rgb(183 0 202)',
         cjHover: 'rgb(59 59 61)',
         cjWhite: 'rgb(211 203 232)'
       },
