@@ -151,7 +151,7 @@ flex-col">
   <!-- Main Start -->
   <main class="bg-transparent flex-grow overflow-y-auto">
 
-    <section class="bg-yellow-200
+    <section class="bg-transparent
     w-full text-center">
         <h1 class="py-20 
         text-center        
@@ -161,11 +161,18 @@ flex-col">
         font-sans">Get In Touch</h1>
 
         <!-- Form Start -->
-        <form class="bg-cardsBlack 
+        <form class="
+        w-[250px]
+        md:w-[450px]
+        lg:w-[600px]
+        xl:w-[600px]
+        xxl:w-[600px]
+        bg-cardsBlack 
         inline-block
         py-10
         px-12
-        m-auto 
+        m-auto
+        mb-20 
         box-content
         rounded-xl
         border-4
@@ -208,7 +215,8 @@ flex-col">
             focus:ring-4 focus:ring-inset focus:ring-cjViolet" type="text" name="country" id="country" placeholder="Country" value="" required>
         
             <label for="message" class="block m-auto pt-5 pl-2 text-left text-xl font-nunito leading-8 text-cjWhite">Your Message:</label>
-            <input class="w-full 
+            <input class="w-full
+            mb-10 
             h-24
             px-3 
             leading-25 
@@ -217,6 +225,15 @@ flex-col">
             rounded-md
             focus:ring-4 focus:ring-inset focus:ring-cjViolet
             placeholder:align-text-top" type="text" name="message" id="message" value="" placeholder="Type your message..." required>
+        
+            <button class="bg-cjViolet
+            px-12
+            py-6
+            rounded-md
+          hover:bg-cjHover">
+                <a class="text-white text-2xl font-normal font-nunito" href="#">Send</a>
+            </button>
+        
         </form>
         <!-- Form End -->
     </section>
