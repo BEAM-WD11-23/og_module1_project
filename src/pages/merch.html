@@ -70,7 +70,8 @@ flex-col">
       </label>
 
       <div class="bg-transparent 
-      hidden 
+      invisible
+      opacity-0 
       fixed 
       top-20 
       right-5 
@@ -79,15 +80,15 @@ flex-col">
       lg:w-[500px] 
       xl:w-[650px] 
       xxl:w-[800px]" id="searchInput">
-         <input type="search" placeholder="Search..." class="bg-inherit
-          w-full
-          relative
-          px-4
-          py-3
-          text-white
-          text-lg
-          border-none
-          rounded-xl">
+        <input type="search" placeholder="Search..." class="bg-inherit
+        w-full
+        relative
+        px-4
+        py-3
+        text-white
+        text-lg
+        border-none
+        rounded-xl">
         <label for="searchCheck" class="bg-transparent 
         absolute 
         top-4 
@@ -98,9 +99,17 @@ flex-col">
           <i class="fa-solid fa-xmark"></i>
         </label>
       </div>
-     
+ 
       <style>
-        #searchCheck:checked ~ #searchInput {display: block;}
+        #searchInput {
+        transition: all 400ms ease;
+        transform: translateX(100%);
+        }
+        #searchCheck:checked ~ #searchInput {
+        visibility: visible; 
+        opacity: 1; 
+        transform: translateX(0%);
+        }
       </style>
       <!-- Search End -->
 
