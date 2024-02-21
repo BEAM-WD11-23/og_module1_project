@@ -69,7 +69,8 @@ flex-col">
           </label>
 
           <div class="bg-transparent 
-          hidden 
+          invisible
+          opacity-0 
           fixed 
           top-20 
           right-5 
@@ -99,7 +100,15 @@ flex-col">
           </div>
      
           <style>
-            #searchCheck:checked ~ #searchInput {display: block;}
+            #searchInput {
+            transition: all 400ms ease;
+            transform: translateX(100%);
+            }
+            #searchCheck:checked ~ #searchInput {
+            visibility: visible; 
+            opacity: 1; 
+            transform: translateX(0%);
+            }
           </style>
           <!-- Search End -->
 
